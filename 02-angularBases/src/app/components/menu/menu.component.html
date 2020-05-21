@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <a [routerLink]="path.path"
+        *ngFor="let path of routes"
+        class="list-group-item">
+        Go to page {{ path.name }}
+    </a>
+</ul>
