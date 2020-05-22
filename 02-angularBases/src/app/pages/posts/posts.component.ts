@@ -24,4 +24,8 @@ export class PostsComponent implements OnInit {
 
   }
 
+  takeEventPost(event) {
+    console.log("Click en: ", event);
+  }
+
 }
