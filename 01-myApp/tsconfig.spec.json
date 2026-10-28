@@ -8,12 +8,14 @@
     ]
   },
   "files": [
-    "src/test.ts",
     "src/zone-flags.ts",
     "src/polyfills.ts"
   ],
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": false
+  }
 }
