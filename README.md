@@ -14,7 +14,7 @@ son propre `package.json` : il faut lancer `npm install` dans chacun.
 |---|--------|-----------------|------------------------|
 | 01 | [`01-myApp`](01-myApp) | Le modèle Ionic « tabs », point de départ | ![audit](https://img.shields.io/badge/npm%20audit-0%20vuln%C3%A9rabilit%C3%A9s-brightgreen) |
 | 02 | [`02-angularBases`](02-angularBases) | Les bases d'Angular : routage, services, `@Input`/`@Output` | ![audit](https://img.shields.io/badge/npm%20audit-0%20vuln%C3%A9rabilit%C3%A9s-brightgreen) |
-| 03 | [`03-components`](03-components) | Composants Ionic : Alert et Action Sheet | ![audit](https://img.shields.io/badge/mise%20%C3%A0%20jour-%C3%A0%20faire-lightgrey) |
+| 03 | [`03-components`](03-components) | Composants Ionic : Alert et Action Sheet | ![audit](https://img.shields.io/badge/npm%20audit-0%20vuln%C3%A9rabilit%C3%A9s-brightgreen) |
 
 ---
 
@@ -96,7 +96,7 @@ Elles sont corrigées **projet par projet**, en montant Angular **une version ma
 |--------|-------|-------|------|
 | 01-myApp | 100 failles (4 en production) | **0** | ✅ terminé : Angular 22, Ionic 8 |
 | 02-angularBases | 131 failles (4 en production) | **0** | ✅ terminé : Angular 22, Bootstrap 5 |
-| 03-components | — | — | ⏳ à faire |
+| 03-components | 179 failles (3 en production) | **0** | ✅ terminé : Angular 22, Ionic 8 |
 
 Les mises à jour vivent sur des branches séparées (`security/<projet>-angular-upgrade`) pour pouvoir être
 relues avant fusion.
