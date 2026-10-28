@@ -1,12 +1,16 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [
         AppComponent
       ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
@@ -22,10 +26,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angularBases');
   });
 
-  it('should render title', () => {
+  it('should render the menu', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angularBases app is running!');
+    expect(compiled.querySelector('.content h1').textContent).toContain('App Component');
+    expect(compiled.querySelector('app-menu')).toBeTruthy();
   });
 });
