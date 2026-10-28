@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Angular CLI cache and local build output
+.angular/
+build.log
