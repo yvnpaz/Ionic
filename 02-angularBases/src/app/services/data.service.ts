@@ -11,7 +11,7 @@ export class DataService {
   constructor(private _http: HttpClient) { }
 
   getPosts() {
-    return this._http.get('https://jsonplaceholder.typicode.com/posts')
+    return this._http.get<any[]>('https://jsonplaceholder.typicode.com/posts')
     .pipe( tap(console.log ) );
   }
 }

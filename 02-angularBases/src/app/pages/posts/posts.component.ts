@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
+import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-posts',
@@ -9,7 +10,7 @@ import { DataService } from '../../services/data.service';
 })
 export class PostsComponent implements OnInit {
 
-  posts: any;
+  posts: Observable<any[]>;
 
   constructor(private _dataService: DataService) { }
 

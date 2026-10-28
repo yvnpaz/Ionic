@@ -1,2 +1,4 @@
 <h1>Posts</h1>
-<app-post *ngFor="let post of posts | async" [post]=post (eventPost)="takeEventPost($event)"></app-post>
+@for (post of posts | async; track post.id) {
+  <app-post [post]=post (eventPost)="takeEventPost($event)"></app-post>
+}
