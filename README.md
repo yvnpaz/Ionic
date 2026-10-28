@@ -1,4 +1,4 @@
-# Ionic / Angular — projets d'apprentissage
+# Front-end practice — projets d'apprentissage Ionic / Angular
 
 ![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?logo=ionic&logoColor=white)
