@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Observable } from 'rxjs';
 
@@ -6,11 +6,12 @@ import { Observable } from 'rxjs';
     selector: 'app-posts',
     templateUrl: './posts.component.html',
     styleUrls: ['./posts.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class PostsComponent implements OnInit {
 
-  posts: Observable<any[]>;
+  posts!: Observable<any[]>;
 
   constructor(private _dataService: DataService) { }
 
@@ -26,7 +27,7 @@ export class PostsComponent implements OnInit {
 
   }
 
-  takeEventPost(event) {
+  takeEventPost(event: number) {
     console.log("Click en: ", event);
   }
 
