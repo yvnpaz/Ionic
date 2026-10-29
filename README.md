@@ -82,9 +82,9 @@ npm test           # tests unitaires (Karma)
 npm run build      # build de production dans dist/
 ```
 
-> **Node.js** : les projets mis à jour (voir ci-dessous) demandent une version récente
-> (`^22.22.3`, `^24.15.0` ou `>=26`). Les projets non encore mis à jour utilisent d'anciennes versions
-> d'Angular qui ne compilent pas avec ce Node (voir `Mise à jour de sécurité`).
+> **Node.js** : Angular 22 demande une version récente de Node.js
+> (`^22.22.3`, `^24.15.0` ou `>=26`). Avec une version plus ancienne, `npm start` et `npm run build`
+> refusent de démarrer.
 
 ## Mise à jour de sécurité
 
@@ -98,5 +98,6 @@ Elles sont corrigées **projet par projet**, en montant Angular **une version ma
 | 02-angularBases | 131 failles (4 en production) | **0** | ✅ terminé : Angular 22, Bootstrap 5 |
 | 03-components | 179 failles (3 en production) | **0** | ✅ terminé : Angular 22, Ionic 8 |
 
-Les mises à jour vivent sur des branches séparées (`security/<projet>-angular-upgrade`) pour pouvoir être
-relues avant fusion.
+Chaque projet a été mis à jour sur sa propre branche (`security/<projet>-angular-upgrade`), puis fusionné
+dans `main` par pull request (#12, #13 et #20). Un commit par version majeure d'Angular permet de retrouver
+chaque étape dans l'historique.
